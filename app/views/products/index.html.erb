@@ -1,9 +1,9 @@
-<%= link_to "Login", '#' %> | <%= link_to "Signup", '#' %> <br>
+<%= link_to "Login", '#' %> | <%= link_to "Signup", 'users/new' %> <br>
 <br>
 <%= link_to "Add new product", '#' %>
 <h1>Products#list</h1>
 <p><% @all_products.each do |x| %></p>
-	<%= link_to "#{x.name}" %><br>
+	<%= link_to "#{x.name}", product_path(x) %><br>
 	<%= x.price %><br>
 	<%= x.description %>
 	<% end %>
