@@ -1,5 +1,4 @@
-
-<%= link_to "Add new product", '#' %>
+<%= link_to "Add new product", new_product_path %>
 <h1>Products#list</h1>
 <p><% @all_products.each do |x| %></p>
 	<%= link_to "#{x.name}", product_path(x) %><br>
